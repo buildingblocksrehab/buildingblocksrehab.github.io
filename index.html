@@ -5,19 +5,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
-  <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+  <link rel="shortcut icon" href="./assets/img/icon-title.ico" />
   <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
   <title>Building Blocks</title>
 </head>
 
 <body class="text-gray-800 antialiased">
   <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3">
-    <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+    <div class="container mx-auto flex flex-wrap items-center justify-between">
       <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-        <a class="text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white" href="#">Building Blocks</a>
+        <div>
+        <a class="text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white" href="#building-blocks">Building Blocks</a></div>
             <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" onclick="toggleNavbar('example-collapse-navbar')">
           <i class="text-white fas fa-bars"></i>
         </button>
@@ -25,7 +25,12 @@
       <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden" id="example-collapse-navbar">
         <ul class="flex flex-col lg:flex-row list-none mr-auto">
           <li class="flex items-center">
-            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="#">About Us</a>
+            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="#about-us">About Us</a>
+            
+          </li>
+          <li class="flex items-center">
+            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="#doctors">Our Doctors</a>
+            
           </li>
           <li class="flex items-center">
             <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="#contact-us-id">Contact</a>
@@ -34,20 +39,26 @@
         <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
           <li class="flex items-center">
             <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="#" target="_blank">
-              <i class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg"></i>
-              <span class="lg:hidden inline-block ml-2">facebook</span>
+              <i class="lg:text-blue-400 text-blue-600 fab fa-facebook text-lg leading-lg"></i>
+              <span class="lg:hidden text-blue-600 inline-block ml-2">facebook</span>
             </a>
           </li>
           <li class="flex items-center">
             <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="#" target="_blank">
-              <i class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg"></i>
-              <span class="lg:hidden inline-block ml-2">Tweet</span>
+              <i class="lg:text-blue-200 text-blue-400 fab fa-twitter text-lg leading-lg"></i>
+              <span class="lg:hidden text-blue-400 inline-block ml-2">Tweet</span>
             </a>
           </li>
           <li class="flex items-center">
             <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="https://instagram.com/bbkidsrehab" target="_blank">
-              <i class="lg:text-gray-300 text-gray-500 fab fa-instagram text-lg leading-lg"></i>
-              <span class="lg:hidden inline-block ml-2">Instagram</span>
+              <i class="lg:text-pink-300 text-pink-500 fab fa-instagram text-lg leading-lg"></i>
+              <span class="lg:hidden text-pink-500 inline-block ml-2">Instagram</span>
+            </a>
+          </li>
+          <li class="flex items-center">
+            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="#" target="_blank">
+              <i class="lg:text-red-300 text-red-500 fab fa-youtube text-lg leading-lg"></i>
+              <span class="lg:hidden text-red-500 inline-block ml-2">Watch</span>
             </a>
           </li>
         </ul>
@@ -55,16 +66,19 @@
     </div>
   </nav>
   <main>
-    <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh">
-      <div class="absolute top-0 w-full h-full bg-center bg-cover" style="background-image: url('assets/img/kid.jpeg');">
+    <div id="building-blocks" class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh">
+      <div class="absolute top-0 w-full h-full bg-center bg-cover" style="background-image: url('assets/img/kid3.jpeg');">
         <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
       </div>
       <div class="container relative mx-auto">
         <div class="items-center flex flex-wrap">
           <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-            <div class="pr-12">
+            <div class="lg:pr-12">
               <h1 class="text-white font-semibold text-5xl">
-                Building Blocks Rehabilitation Centre
+                Building Blocks
+              </h1>
+              <h1 class="mt-4 text-white font-semibold text-5xl">
+                Rehabilitation Centre
               </h1>
               <p class="mt-4 text-lg text-gray-300">
                 We provide occupational therapy, physical therapy, speech therapy, psychology, counselling and special education as per children's needs.
@@ -81,18 +95,19 @@
       </div>
     </div>
     <section class="pb-20 bg-gray-300 -mt-24">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-4" id="about-us">
         <div class="flex flex-wrap">
           <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
             <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
               <div class="px-4 py-5 flex-auto">
                 <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
-                  <i class="fas fa-award"></i>
+                  <i class="fas fa-child"></i>
                 </div>
-                <h6 class="text-xl font-semibold">Awarded Agency</h6>
-                <p class="mt-2 mb-4 text-gray-600">
-                  Divide details about your product or agency work into parts.
-                  A paragraph describing a feature will be enough.
+                <h6 class="text-xl font-semibold"><a href="#physical-therapy">Physical Therapy</a></h6>
+                <h6 class="text-xl font-semibold"><a href="#occupation-therapy">Occupation Therapy</a></h6>
+                <h6 class="text-xl font-semibold">Creative Counselling</h6>
+                <p class="mt-2 mb-2 text-gray-600">
+                  Read in details below...
                 </p>
               </div>
             </div>
@@ -101,12 +116,11 @@
             <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
               <div class="px-4 py-5 flex-auto">
                 <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
-                  <i class="fas fa-retweet"></i>
+                  <i class="fas fa-book-reader"></i>
                 </div>
-                <h6 class="text-xl font-semibold">Free Revisions</h6>
+                <h6 class="text-xl font-semibold">Special Education</h6>
                 <p class="mt-2 mb-4 text-gray-600">
-                  Keep you user engaged by providing meaningful information.
-                  Remember that by this time, the user is curious.
+                  It is the practice of educating kids in a way that provides accommodations that address their individual differences, disabilities, and special needs.
                 </p>
               </div>
             </div>
@@ -115,53 +129,44 @@
             <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
               <div class="px-4 py-5 flex-auto">
                 <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
-                  <i class="fas fa-fingerprint"></i>
+                  <i class="fas fa-assistive-listening-systems"></i>
                 </div>
-                <h6 class="text-xl font-semibold">Verified Company</h6>
+                <h6 class="text-xl font-semibold">Speech Therapy</h6>
                 <p class="mt-2 mb-4 text-gray-600">
-                  Write a few lines about each one. A paragraph describing a
-                  feature will be enough. Keep you user engaged!
+                  Speech Therapy include articulation therapy, language intervention activities, and others depending on the type of speech or language disorder.
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="flex flex-wrap items-center mt-32">
+        <div class="flex flex-wrap items-center mt-32" id="physical-therapy">
           <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
-            <div class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
+            <!--<div class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
               <i class="fas fa-user-friends text-xl"></i>
-            </div>
-            <h3 class="text-3xl mb-2 font-semibold leading-normal">
-              Working with us is a pleasure
+            </div>-->
+            <h3 class="font-mono text-3xl mb-2 font-semibold leading-normal">
+              Physical Therapy
             </h3>
             <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
-              Don't let your uses guess by attaching tooltips and popoves to
-              any element. Just make sure you enable them first via
-              JavaScript.
+              We treat pain arising from musculoskeletal conditions, injury and post surgical cases. We manage posture, muscle imbalance cases, neurology, neurosurgical conditions, gait and imbalance conditions. We treat movement disorders and specialise in cardiopulmonary rehabilitation.
             </p>
             <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-              The kit comes with three pre-built pages to help you get started
-              faster. You can change the text and images and you're good to
-              go. Just make sure you enable them first via JavaScript.
+              We also provide pre and post natal exercise, pelvic floor strengthening for pregnancy care and  other gynaecology conditions and specialise in oncology care and lymphaedema management
             </p>
-            <a href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
-              class="font-bold text-gray-800 mt-8">Check Tailwind Starter Kit!</a>
           </div>
           <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
             <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600">
-              <img alt="..." src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80" class="w-full align-middle rounded-t-lg" />
+              <img alt="Physical therapy" src="assets/img/physiotherapy.jpeg" class="w-full align-middle rounded-t-lg" />
               <blockquote class="relative p-8 mb-4">
                 <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95"
                   class="absolute left-0 w-full block" style="height: 95px; top: -94px">
                   <polygon points="-30,95 583,95 583,65" class="text-pink-600 fill-current"></polygon>
                 </svg>
                 <h4 class="text-xl font-bold text-white">
-                  Top Notch Services
+                  Our Treatment Includes :
                 </h4>
                 <p class="text-md font-light mt-2 text-white">
-                  The Arctic Ocean freezes every winter and much of the
-                  sea-ice then thaws every summer, and that process will
-                  continue whatever happens.
+                  Pain management, Dry needling, Cupping, Sports taping, Manual therapy, Deep heating, Pneumatic Compression therapy, Paraffin wax therapy, IFT, tens, Muscle stimulation, Ultrasound, Cervical and lumbar traction, Hand strength training and rehabilitation, Balance training, General fitness and exercises.
                 </p>
               </blockquote>
             </div>
@@ -177,33 +182,33 @@
         </svg>
       </div>
       <div class="container mx-auto px-4">
-        <div class="items-center flex flex-wrap">
+        <div class="items-center flex flex-wrap" id="occupation-therapy">
           <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
-            <img alt="..." class="max-w-full rounded-lg shadow-lg"
-              src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80" />
+            <img alt="Occupational Therapy" class="max-w-full rounded-lg shadow-lg"
+              src="assets/img/occupational.jpeg" />
           </div>
           <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
             <div class="md:pr-12">
-              <div class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
+              <!--<div class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
                 <i class="fas fa-rocket text-xl"></i>
-              </div>
-              <h3 class="text-3xl font-semibold">A growing company</h3>
-              <p class="mt-4 text-lg leading-relaxed text-gray-600">
-                The extension comes with three pre-built pages to help you get
-                started faster. You can change the text and images and you're
-                good to go.
+              </div>-->
+              <h3 class="text-3xl font-semibold mt-4">Occupation Therapy</h3>
+              <p class="mt-4 text-md leading-relaxed text-gray-600">
+                Occupational therapy can benefit children with learning and behavioral disorders, developmental delays, visual and hearing impairments, emotional disturbances or physical disabilities. They may learn to function more freely in a developmental or sensory integration program.
+                </p>
+                <p class="mt-4 text-md leading-relaxed text-gray-600"></p> The purpose of therapy is to help strengthen the coordination between brain and body to gain and/or enhance function in daily living. 
               </p>
               <ul class="list-none mt-6">
                 <li class="py-2">
                   <div class="flex items-center">
                     <div>
                       <span class="text-xsfont-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
-                        <i class="fas fa-fingerprint"></i>
+                        <i class="fas fa-angle-down"></i>
                       </span>
                     </div>
                     <div>
                       <h4 class="text-gray-600">
-                        Carefully crafted components
+                        Areas we deal in
                       </h4>
                     </div>
                   </div>
@@ -212,11 +217,11 @@
                   <div class="flex items-center">
                     <div>
                       <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
-                        <i class="fab fa-html5"></i>
+                        <i class="fas fa-angle-right"></i>
                       </span>
                     </div>
                     <div>
-                      <h4 class="text-gray-600">Amazing page examples</h4>
+                      <h4 class="text-gray-600">Sensory processing skills</h4>
                     </div>
                   </div>
                 </li>
@@ -224,14 +229,75 @@
                   <div class="flex items-center">
                     <div>
                       <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
-                        <i class="far fa-paper-plane"></i>
+                        <i class="fas fa-angle-right"></i>
                       </span>
                     </div>
                     <div>
-                      <h4 class="text-gray-600">Dynamic components</h4>
+                      <h4 class="text-gray-600">Fine & Gross motor skills</h4>
                     </div>
                   </div>
                 </li>
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                        <i class="fas fa-angle-right"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-600">Visual Perception</h4>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                        <i class="fas fa-angle-right"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-600">Memory & Cognition</h4>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                        <i class="fas fa-angle-right"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-600">Handwriting Difficulties</h4>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                        <i class="fas fa-angle-right"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-600">School Readiness</h4>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                        <i class="fas fa-angle-right"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-600">Play & Group therapy</h4>
+                    </div>
+                  </div>
+                </li>
+                
               </ul>
             </div>
           </div>
@@ -239,7 +305,7 @@
       </div>
     </section>
     <section class="pt-20 pb-48">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-4" id="doctors">
         <div class="flex flex-wrap justify-center text-center mb-24">
           <div class="w-full lg:w-6/12 px-4">
             <h2 class="text-4xl font-semibold">Here are our doctors</h2>
@@ -249,7 +315,7 @@
         <div class="flex flex-wrap">
           <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
             <div class="px-6">
-              <img alt="..." src="./assets/img/mri.jpeg" class="shadow-lg rounded-full max-w-full mx-auto"
+              <img alt="Mritunjay" src="./assets/img/mri.jpeg" class="shadow-lg rounded-full max-w-full mx-auto"
                 style="max-width: 120px" />
               <div class="pt-6 text-center">
                 <h5 class="text-xl font-bold">Mritunjay</h5>
@@ -267,7 +333,7 @@
           </div>
           <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
             <div class="px-6">
-              <img alt="..." src="./assets/img/veer.jpeg" class="shadow-lg rounded-full max-w-full mx-auto"
+              <img alt="Veerendra Verma" src="./assets/img/veer.jpeg" class="shadow-lg rounded-full max-w-full mx-auto"
                 style="max-width: 120px" />
               <div class="pt-6 text-center">
                 <h5 class="text-xl font-bold">Veerendra Verma</h5>
@@ -285,7 +351,7 @@
           </div>
           <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
             <div class="px-6">
-              <img alt="..." src="./assets/img/rani.jpeg" class="shadow-lg rounded-full max-w-full mx-auto"
+              <img alt="Rani Chauhan" src="./assets/img/rani.jpeg" class="shadow-lg rounded-full max-w-full mx-auto"
                 style="max-width: 120px" />
               <div class="pt-6 text-center">
                 <h5 class="text-xl font-bold">Rani Chauhan</h5>
@@ -303,7 +369,7 @@
           </div>
           <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
             <div class="px-6">
-              <img alt="..." src="./assets/img/team-1-800x800.jpg" class="shadow-lg rounded-full max-w-full mx-auto"
+              <img alt="Kevin Hart" src="./assets/img/team-1-800x800.jpg" class="shadow-lg rounded-full max-w-full mx-auto"
                 style="max-width: 120px" />
               <div class="pt-6 text-center">
                 <h5 class="text-xl font-bold">Kevin Hart</h5>
@@ -334,7 +400,8 @@
       <div class="container mx-auto px-4">
         <div class="flex flex-wrap text-center justify-center">
           <div class="w-full lg:w-6/12 px-4">
-            <h2 class="text-4xl font-semibold text-white mt-8">Our Address</h2>
+            <i class="fas fa-map-marked-alt text-white text-lg mt-8 mr-4"></i>
+            <span class="text-4xl font-semibold text-white">Our Address</span>
             <p class="text-lg leading-relaxed mt-4 text-gray-500">
               Building Block Rehabilitation Centre
             </p>
@@ -378,8 +445,8 @@
             <div class="w-full lg:w-4/12 px-4 ml-auto"> 
             </div>
             <div class="w-full lg:w-4/12 px-4">
-              <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Contact-us
-              </span>
+              <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">
+                <i class="fas fa-phone-alt mr-2"></i>Contact-us</span>
               <ul class="list-unstyled">
                 <li>
                   <p class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm">+91-95602 59925</p>
@@ -398,7 +465,7 @@
       <div class="flex flex-wrap items-center md:justify-between justify-center">
         <div class="w-full md:w-4/12 px-4 mx-auto text-center">
           <div class="text-sm text-gray-600 font-semibold py-1">
-            Copyright © 2021-2022 Building Blocks
+            Copyright © 2021-2022 <span><a href="#building-blocks">Building Blocks</a></span>
           </div>
         </div>
       </div>
